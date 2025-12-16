@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flix Finder</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="./assets/Flix Finder Logo.png" alt="">
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Home</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Find Your Movie</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor-primary
+                        link__hover--anchor-primary
+                        ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <figure class="header__img--wrapper">
+                        <img src="./assets/Flix Finder Header.png" alt="">
+                    </figure>
+                    <h1 class="header__title">Browse Our <span class="accent">Movies</span></h1>
+                    <div class="input__box">
+                        <i class="uil uil-search"></i>
+                        <input type="text" placeholder="Search by Movies" />
+                        <button class="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section id="search">
+        <div class="search__container">
+            <div class="filter__header">
+                <h2>Search results:</h2>
+                <select id="filter">
+                    <option value="" disabled selected>Sort</option>
+                    <option value="tile">Title</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <div class="results__container">
+                <div class="row">
+                    <div class="movie-list">
+                        <div class="movie">
+                        <div class="movie-card">
+                            <div class="movie-card__container">
+                            <h3>Movie Title</h4>
+                                <p><b>Poster:</b> <a href="https://website.website" target="_blank">website.website</a></p>
+                                <p><b>Year:</b> Movie Year</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                 </div>
+
+                
+            </div>
+        </div>
+    </section>
+  
+    
+</body>
+<script src="movies.js"></script>
+
+</html>
