@@ -22,10 +22,10 @@ function movieHTML(movie) {
     <div class="movie">
       <div class="movie-card">
         <div class="movie-card__container">
-          <h3>${title}</h3>
           <a href="${posterUrl}" target="_blank" aria-label="Open poster in new tab">
             <img class="movie-card__poster" src="${posterUrl}" alt="${title} poster" />
           </a>
+          <h3>${title}</h3>
           <p><b>Year:</b> ${year}</p>
         </div>
       </div>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flix Finder</title>
     <link rel="stylesheet" href="styles.css">
-   
+    <script src="https://kit.fontawesome.com/2ac8ec7a48.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -49,6 +49,10 @@
                         <input type="text" placeholder="Search by Movies" />
                         <button class="button">Search</button>
                     </div>
+                    <div class="movies movies__loading">
+                        <i class="fa-duotone fa-solid fa-spinner movies__loading--spinner"></i>
+                        <div id="content"></div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -60,31 +64,29 @@
                 <h2>Search results:</h2>
                 <select id="filter">
                     <option value="" disabled selected>Sort</option>
-                    <option value="tile">Title</option>
+                    <option value="title">Title</option>
                     <option value="year">Year</option>
                 </select>
             </div>
+
             <div class="results__container">
                 <div class="row">
                     <div class="movie-list">
                         <div class="movie">
                         <div class="movie-card">
                             <div class="movie-card__container">
-                            <h3>Movie Title</h4>
                                 <p><b>Poster:</b> <a href="https://website.website" target="_blank">website.website</a></p>
+                                <h3>Movie Title</h3>
                                 <p><b>Year:</b> Movie Year</p>
                             </div>
                         </div>
                         </div>
                     </div>
                  </div>
-
-                
             </div>
         </div>
     </section>
   
-    
 </body>
 <script src="movies.js"></script>
 
